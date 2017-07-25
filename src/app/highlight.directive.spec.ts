@@ -27,4 +27,17 @@ describe('HighlightDirective', () => {
     fixture = TestBed.createComponent(DirectiveHostComponent);
     fixture.detectChanges(); 
   });
+
+  it('should set the first element bgColor to cyan', () => {
+    let de = fixture.debugElement.queryAll(By.css('p'))[0];
+
+    expect(de.nativeElement.style.backgroundColor).toBe('cyan');
+  })
+
+  it('should set the second element bgColor to default color', () => {
+    let de = fixture.debugElement.queryAll(By.css('p'))[1];
+    let directive = de.injector.get(HighlightDirective);
+
+    expect(de.nativeElement.style.backgroundColor).toBe(directive.defaultColor);
+  })
 });
