@@ -6,13 +6,13 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TodosComponent } from './2-todos/todos.component';
-import { UserDetailsComponent } from './3-user-details/user-details.component';
-import { VoterComponent } from './1-voter/voter.component';
+import { VoterComponent } from './07-voter/voter.component';
+import { TodosComponent } from './08-todos/todos.component';
+import { UserDetailsComponent } from './09-user-details/user-details.component';
 
 import { routes } from './app.routes';
 import { UsersComponent } from './users/users.component';
-import { NavComponent } from './nav/nav.component';
+// import { NavComponent } from './nav/nav.component';
 import { HighlightDirective } from './highlight.directive'; 
 
 @NgModule({
@@ -23,7 +23,7 @@ import { HighlightDirective } from './highlight.directive';
     UserDetailsComponent,
     VoterComponent,
     UsersComponent,
-    NavComponent,
+    // NavComponent,
     HighlightDirective
   ],
   imports: [
